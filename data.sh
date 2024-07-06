@@ -20,9 +20,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
-      MYSQL_DATABASE: kohli
-      MYSQL_USER: virat
-      MYSQL_PASSWORD: virat1818
+      MYSQL_DATABASE: chakry
+      MYSQL_USER: playboy
+      MYSQL_PASSWORD: chakry123456789
 
   wordpress:
     image: wordpress:latest
@@ -34,9 +34,9 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: virat
-      WORDPRESS_DB_PASSWORD: virat1818
-      WORDPRESS_DB_NAME: kohli
+      WORDPRESS_DB_USER: playboy
+      WORDPRESS_DB_PASSWORD: chakry123456789
+      WORDPRESS_DB_NAME: chakry
     volumes:
       - wordpress_data:/var/www/html
 
